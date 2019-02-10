@@ -35,9 +35,9 @@ public class ProductInfoImplTest {
     }
 
     @Test
-    public void findAll() {
+    public void findByPage() {
         PageRequest request = new PageRequest(0,2);
-        Page<ProductInfo> result = productInfoService.findAll(request);
+        Page<ProductInfo> result = productInfoService.findByPage(request);
         System.out.println(result.getTotalElements());
     }
 

@@ -10,10 +10,11 @@ public interface ProductInfoService {
 
     ProductInfo findById(String productId);
 
+    //查询所有上架的
     List<ProductInfo> findUpAll();
 
     //查询所有
-    Page<ProductInfo> findAll(Pageable pageable);
+    Page<ProductInfo> findByPage(Pageable pageable);
 
     ProductInfo save(ProductInfo productInfo);
 

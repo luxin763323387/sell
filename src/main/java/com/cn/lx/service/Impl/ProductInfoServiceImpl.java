@@ -30,7 +30,7 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     }
 
     @Override
-    public Page<ProductInfo> findAll(Pageable pageable) {
+    public Page<ProductInfo> findByPage(Pageable pageable) {
         Page<ProductInfo> productInfoPage = productInfoRepository.findAll(pageable);
         return productInfoPage;
     }
