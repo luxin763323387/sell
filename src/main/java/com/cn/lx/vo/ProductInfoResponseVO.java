@@ -23,4 +23,6 @@ public class ProductInfoResponseVO implements Serializable {
 
     @JsonProperty("icon")
     private String productIcon;
+
+    private Integer categoryType;
 }
