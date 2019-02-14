@@ -1,6 +1,7 @@
 package com.cn.lx.service;
 
 import com.cn.lx.entity.ProductInfo;
+import com.cn.lx.vo.CarVO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -19,7 +20,8 @@ public interface ProductInfoService {
     ProductInfo save(ProductInfo productInfo);
 
     //加库存
-
+    void increaseStock(List<CarVO> carVOS);
 
     //减库存
+    void decreaseStock(List<CarVO> carVOS);
 }

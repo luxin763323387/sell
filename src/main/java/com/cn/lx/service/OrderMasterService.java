@@ -5,6 +5,8 @@ import com.cn.lx.vo.OrderMasterVO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface OrderMasterService {
 
     /**创建订单*/
@@ -14,7 +16,7 @@ public interface OrderMasterService {
     OrderMasterVO findOne(String orderId);
 
     /** 查询订单列表*/
-    Page<OrderMaster> findList(String buyerOpenid, Pageable pageable);
+    Page<OrderMasterVO> findList(String buyerOpenid, Pageable pageable);
 
     /** 取消订单*/
     OrderMasterVO cancel(OrderMasterVO orderMasterVO);

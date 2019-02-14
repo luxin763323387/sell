@@ -1,4 +1,4 @@
-package com.cn.lx.entity;
+package com.cn.lx.enums;
 
 import lombok.Getter;
 

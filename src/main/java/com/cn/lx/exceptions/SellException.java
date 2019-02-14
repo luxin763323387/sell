@@ -1,6 +1,6 @@
 package com.cn.lx.exceptions;
 
-import com.cn.lx.entity.ResultEnum;
+import com.cn.lx.enums.ResultEnum;
 
 public class SellException extends RuntimeException {
 
