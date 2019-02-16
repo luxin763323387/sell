@@ -93,7 +93,7 @@ public class OrderMasterServiceImpl implements OrderMasterService {
 
         //扣库存
         productInfoService.decreaseStock(carVOS);
-
+        orderMasterVO.setOrderId(orderId);
         return orderMasterVO;
     }
 
